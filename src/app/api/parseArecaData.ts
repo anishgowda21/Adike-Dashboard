@@ -1,5 +1,5 @@
 import * as cheerio from "cheerio";
-import { ArecaData, dailyData, Product } from "./types";
+import { ArecaData, Product } from "./types";
 
 const parseArecaData = (htmlContent: string): ArecaData => {
   const $ = cheerio.load(htmlContent);
